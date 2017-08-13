@@ -1,0 +1,24 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "使用koa2和websocket搭建的多人在线聊天应用",
+  "main": "./index.js",
+  "scripts": {
+
+  },
+  "keywords": [
+    "chatroom",
+    "websocket",
+    "react",
+    "redux",
+    "webpack"
+  ],
+  "author": "cpselvis@gmail.com (https://github.com/cpselvis)",
+  "license": "MIT",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
