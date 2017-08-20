@@ -16,10 +16,12 @@
   "author": "cpselvis@gmail.com (https://github.com/cpselvis)",
   "license": "MIT",
   "dependencies": {
+    "koa": "^2.3.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "socket.io": "^2.0.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
