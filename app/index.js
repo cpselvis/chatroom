@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { provider, connect } from 'react-redux';
 
+import LeftNav from './components/left-nav';
+import ChatList from './components/chat-list';
 import ChatPanel from './components/chat-panel';
 import PersonPanel from './components/person-panel';
 
@@ -19,6 +21,8 @@ class App extends Component {
 
 
 const element = <div className="wrapper">
+  <LeftNav />
+  <ChatList />
   <ChatPanel />
   <PersonPanel />
 </div>;

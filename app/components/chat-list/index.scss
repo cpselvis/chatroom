@@ -1,0 +1,35 @@
+
+.chat-list {
+  display: flex;
+  flex-direction: column;
+  background: #363e47;
+  width: 240px;
+
+  .contact-item {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 20px;
+    .avatar {
+      margin-right: 20px;
+      img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .contact-content {
+      .nickname {
+        color: #fff;
+        font-size: 14px;
+      }
+      .recent-msg {
+        color: #6a7681;
+        font-size: 12px;
+      }
+    }
+  }
+  .current {
+    background: #404953;
+  }
+}
