@@ -5,6 +5,9 @@ import { createStore } from 'redux';
 import { provider, connect } from 'react-redux';
 
 import ChatPanel from './components/chat-panel';
+import PersonPanel from './components/person-panel';
+
+import './index.scss';
 
 
 class App extends Component {
@@ -15,9 +18,11 @@ class App extends Component {
 }
 
 
-const element = <h1>
+const element = <div className="wrapper">
   <ChatPanel />
-</h1>;
+  <PersonPanel />
+</div>;
+
 ReactDOM.render(
   element,
   document.getElementById('root')

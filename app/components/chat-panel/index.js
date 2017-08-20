@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SendPanel from '../send-panel';
+
 import './index.scss';
 
 class ChatPanel extends Component {
@@ -38,6 +40,7 @@ class ChatPanel extends Component {
           <div className="msg-text">Diease good? how do you feel?</div>
         </div>
       </div>
+      <SendPanel />
     </div>;
   }
 }
