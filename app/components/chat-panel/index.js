@@ -6,6 +6,7 @@ import './index.scss';
 class ChatPanel extends Component {
 
   render() {
+    const { socket }= this.props;
     return <div className="chat-panel">
       <div className="header">
         <span className="nickname">Sophie Marceau</span>
@@ -40,7 +41,9 @@ class ChatPanel extends Component {
           <div className="msg-text">Diease good? how do you feel?</div>
         </div>
       </div>
-      <SendPanel />
+      <SendPanel
+        socket={socket}
+      />
     </div>;
   }
 }

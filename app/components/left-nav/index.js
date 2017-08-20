@@ -10,7 +10,7 @@ class LeftNav extends Component {
           <img src="https://avatars0.githubusercontent.com/u/18289264?v=4&u=61082b05c36af8782b9d3abe227b7f429de7b816&s=100" />
         </div>
 
-        <div classNmae="nav-list">
+        <div className="nav-list">
           <div className="message"></div>
           <div className="contact"></div>
           <div className="group"></div>

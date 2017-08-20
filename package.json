@@ -16,6 +16,7 @@
   "author": "cpselvis@gmail.com (https://github.com/cpselvis)",
   "license": "MIT",
   "dependencies": {
+    "file-loader": "^0.11.2",
     "koa": "^2.3.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

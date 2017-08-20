@@ -6,8 +6,12 @@ const app = new Koa();
 const server = require('http').createServer(app.callback());
 const io = require('socket.io')(server);
 
-io.on('connection', function(){
-  console.log('on connected!')
+io.on('connection', function(socket){
+  console.log('on connected!');
+
+  socket.on('message', function(message) {
+    console.log(message);
+  });
 });
 
 server.listen(3000);

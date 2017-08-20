@@ -19,11 +19,17 @@ class App extends Component {
     }
 }
 
+const socket = io.connect('http://127.0.0.1:3000');
+
+socket.emit('message', {'text': 'hello world'});
+
 
 const element = <div className="wrapper">
   <LeftNav />
   <ChatList />
-  <ChatPanel />
+  <ChatPanel
+    socket={socket}
+  />
   <PersonPanel />
 </div>;
 

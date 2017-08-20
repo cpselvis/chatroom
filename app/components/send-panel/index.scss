@@ -2,4 +2,32 @@
 .send-panel {
   background: #fff;
   height: 20%;
+
+  .send-wrapper {
+    height: 100%;
+    position: relative;
+
+    .msg-input {
+      height: 100%;
+
+      textarea {
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+      }
+
+    }
+
+    .send-btn {
+      background: url('./images/send.png') no-repeat;
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      width: 32px;
+      height: 30px;
+    }
+  }
+
 }
