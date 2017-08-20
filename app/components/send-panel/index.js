@@ -13,11 +13,19 @@ class SendPanel extends Component {
   sendMessage() {
     const { socket } = this.props;
     const { inputValue } = this.state;
-    socket.emit('message', inputValue);
+    socket.emit('message', {
+      room: 'test',
+      from: 'lewischeng',
+      text: inputValue
+    });
+
+    this.setState({
+      inputValue: ''
+    })
   }
 
   onTextareaInput(evt) {
-    const value = evt.target.value.trim();
+    const value = evt.target.value;
 
     this.setState({
       inputValue: value
@@ -25,6 +33,7 @@ class SendPanel extends Component {
   }
 
   render() {
+    const { inputValue } = this.state;
     return (
       <div className="send-panel">
         <div className="tools">
@@ -37,6 +46,7 @@ class SendPanel extends Component {
               rows="10"
               cols="30"
               placeholder="Type something here."
+              value={inputValue}
               onInput={this.onTextareaInput.bind(this)}
             />
           </div>

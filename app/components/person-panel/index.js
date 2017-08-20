@@ -16,7 +16,7 @@ class PersonPanel extends Component {
         <div className="contact-info">
           <p>
             <i className="location"/>
-            BeiJing China
+            ShenZheng China
           </p>
           <p>
             <i className="email" />

@@ -8,7 +8,9 @@
     position: relative;
 
     .msg-input {
-      height: 100%;
+      height: calc(100% - 10px);
+      padding-top: 10px;
+      margin-left: 10px;
 
       textarea {
         outline: none;

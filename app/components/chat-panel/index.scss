@@ -36,6 +36,8 @@
   }
 
   .msg-panel {
+    display: flex;
+    flex-direction: column;
     padding-top: 18px;
     padding-left: 30px;
     height: 73%;
@@ -58,6 +60,15 @@
         background: #fff;
         color: #99a8b4;
         padding: 13px;
+      }
+    }
+    .own {
+      display: flex;
+      justify-content: flex-end;
+      .msg-text {
+        background: #55d48b;
+        margin-right: 10px;
+        color: #fff;
       }
     }
     .msg-item:after {

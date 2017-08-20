@@ -11,6 +11,10 @@ io.on('connection', function(socket){
 
   socket.on('message', function(message) {
     console.log(message);
+    io.emit(message.room, {
+      text: message.text,
+      from: message.from
+    });
   });
 });
 

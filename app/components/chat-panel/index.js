@@ -6,40 +6,36 @@ import './index.scss';
 class ChatPanel extends Component {
 
   render() {
-    const { socket }= this.props;
+    const { socket, chatData }= this.props;
     return <div className="chat-panel">
       <div className="header">
-        <span className="nickname">Sophie Marceau</span>
+        <span className="nickname">James Halliday</span>
         <span className="status">
           <i className="online" />
           Mobile online
         </span>
       </div>
       <div className="msg-panel">
-        <div className="msg-item">
-          <div className="avatar">
-            <img src="https://avatars0.githubusercontent.com/u/18289264?v=4&u=61082b05c36af8782b9d3abe227b7f429de7b816&s=100" />
-          </div>
-          <div className="msg-text">Diease good? how do you feel?</div>
-        </div>
-        <div className="msg-item">
-          <div className="avatar">
-            <img src="https://avatars0.githubusercontent.com/u/18289264?v=4&u=61082b05c36af8782b9d3abe227b7f429de7b816&s=100" />
-          </div>
-          <div className="msg-text">Diease good? how do you feel?</div>
-        </div>
-        <div className="msg-item">
-          <div className="avatar">
-            <img src="https://avatars0.githubusercontent.com/u/18289264?v=4&u=61082b05c36af8782b9d3abe227b7f429de7b816&s=100" />
-          </div>
-          <div className="msg-text">Diease good? how do you feel?</div>
-        </div>
-        <div className="msg-item">
-          <div className="avatar">
-            <img src="https://avatars0.githubusercontent.com/u/18289264?v=4&u=61082b05c36af8782b9d3abe227b7f429de7b816&s=100" />
-          </div>
-          <div className="msg-text">Diease good? how do you feel?</div>
-        </div>
+       {
+         chatData.map((item, index) => {
+
+           return item.nickname === 'lewischeng' ? (
+             <div className="msg-item own" key={index}>
+               <div className="msg-text">{item.message}</div>
+               <div className="avatar">
+                 <img src={item.avatar} />
+               </div>
+             </div>
+           ) : (
+             <div className="msg-item" key={index}>
+               <div className="avatar">
+                 <img src={item.avatar} />
+               </div>
+               <div className="msg-text">{item.message}</div>
+             </div>
+           )
+         })
+       }
       </div>
       <SendPanel
         socket={socket}
