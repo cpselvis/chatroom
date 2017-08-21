@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 46px;
+    margin: 40px 0;
     img {
       width: 140px;
       height: 140px;
@@ -20,6 +20,9 @@
 
   .base-info {
     margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .nickname {
       font-size: 24px;
       color: #000;
@@ -33,11 +36,24 @@
 
   .contact-info {
     p {
+      display: flex;
+      flex-direction: row;
       font-size: 16px;
       color: #d6dce1;
       margin-bottom: 20px;
       height: 20px;
       line-height: 20px;
+
+      i {
+        display: flex;
+        justify-content: center;
+        font-family: 'chatroom';
+        color: #d6dce1;
+        font-size: 20px;
+        font-style: normal;
+        align-items: center;
+        margin-right: 18px;
+      }
     }
   }
 }

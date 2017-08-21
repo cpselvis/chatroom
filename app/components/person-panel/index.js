@@ -15,15 +15,15 @@ class PersonPanel extends Component {
         </div>
         <div className="contact-info">
           <p>
-            <i className="location"/>
+            <i className="location">&#xe623;</i>
             ShenZheng China
           </p>
           <p>
-            <i className="email" />
+            <i className="email">&#xe604;</i>
             cpselvis@gmail.com
           </p>
           <p>
-            <i className="phone" />
+            <i className="phone">&#xe666;</i>
             13677432189
           </p>
         </div>

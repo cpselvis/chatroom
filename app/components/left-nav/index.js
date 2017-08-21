@@ -11,7 +11,7 @@ class LeftNav extends Component {
         </div>
 
         <div className="nav-list">
-          <i className="message">&#xe69a;</i>
+          <i className="message current">&#xe69a;</i>
           <i className="contact">&#xe619;</i>
           <i className="group">&#xe615;</i>
           <i className="settings">&#xe602;</i>
